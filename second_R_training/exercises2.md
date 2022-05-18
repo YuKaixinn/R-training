@@ -153,8 +153,7 @@ list_0
 ```
 ![Snipaste_2022-05-18_15-04-26.png](https://s2.loli.net/2022/05/18/AxlOnLfcZyeWIaT.png)
 另一种没学过的方法：[apply](https://www.cnblogs.com/jiaxinwei/p/11517345.html)
-### 练习5-2，R有几个内置的数据集，其中包括由安德森和费舍尔在20世纪30年代收集和分析的iris（指鸢尾花，而不是虹膜）数据。输入iris即可
-看到数据集。创建一个新的数据框，它由iris数据集的数值列组成；计算各列的平均值。
+### 练习5-2，R有几个内置的数据集，其中包括由安德森和费舍尔在20世纪30年代收集和分析的iris（指鸢尾花，而不是虹膜）数据。输入iris即可看到数据集。创建一个新的数据框，它由iris数据集的数值列组成；计算各列的平均值。
 ```R
 iris                                         #入iris看到数据集。
 new_frame<-data.frame(iris[c(TRUE,TRUE,TRUE,TRUE,FALSE)])             #建一个新的数据框，它由iris数据集的数值列组成
