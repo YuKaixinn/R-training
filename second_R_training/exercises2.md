@@ -51,7 +51,7 @@ banana<-NULL
 peach<-NULL
 ls(pattern = "a")       #输出包含字母“a”的变量
 ```
-#### 输出结果：`[1] "animals_char" "animals_fac"  "banana"       "peach"  `
+#### 输出结果：`[1] "apple"    "banana"       "peach"  `
 -------------------------------------------------
 # Problem 4
 ### 问题4-1，你将如何创建一个包含值0、0.25、0.5、0.75、1和1.25的向量？
@@ -126,7 +126,33 @@ list(alpha = 1, list(beta = 2, gamma = 3, delta = 4), eta = NULL)
 # Exercise 5
 ### 练习5-1，创建一个列表变量，它的第一个元素包含所有从0到9的平方数，第二个元素为10至19之内的所有平方数，依此类推，最后一个元素为90到99之内的平方数。
 ```R
+c0<-c(0:9)
+c1<-c(10:19)
+c2<-c(20:29)
+c3<-c(30:39)
+c4<-c(40:49)
+c5<-c(50:59)
+c6<-c(60:69)
+c7<-c(70:79)
+c8<-c(80:89)
+c9<-c(90:99)
+list_0<-list(
+  c0[(round(sqrt(c0))^2==c0)],
+  c1[(round(sqrt(c1))^2==c1)],
+  c2[(round(sqrt(c2))^2==c2)],
+  c3[(round(sqrt(c3))^2==c3)],
+  c4[(round(sqrt(c4))^2==c4)],
+  c5[(round(sqrt(c5))^2==c5)],
+  c6[(round(sqrt(c6))^2==c6)],
+  c7[(round(sqrt(c7))^2==c7)],
+  c8[(round(sqrt(c8))^2==c8)],
+  c9[(round(sqrt(c9))^2==c9)]
+             )
+list_0
+
 ```
+![Snipaste_2022-05-18_15-04-26.png](https://s2.loli.net/2022/05/18/AxlOnLfcZyeWIaT.png)
+另一种没学过的方法：[apply](https://www.cnblogs.com/jiaxinwei/p/11517345.html)
 ### 练习5-2，R有几个内置的数据集，其中包括由安德森和费舍尔在20世纪30年代收集和分析的iris（指鸢尾花，而不是虹膜）数据。输入iris即可
 看到数据集。创建一个新的数据框，它由iris数据集的数值列组成；计算各列的平均值。
 ```R
